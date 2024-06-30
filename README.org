@@ -29,121 +29,108 @@ Unless otherwise specified, all code below is written in Nim.
 
 ** Physics research 🧑‍🔬🔭📡☀️
 
-- https://github.com/Vindaar/phd - The git repository of my PhD
-  thesis. See https://phd.vindaar.de for the companion website to my
-  thesis, which links to the publication and an (extended) HTML version.
-- https://github.com/Vindaar/TimepixAnalysis - The main data analysis
-  framework for my PhD thesis.
-- https://github.com/SciNim/xrayAttenuation - A library for the
-  calculation of X-ray interactions with matter (transmission,
-  reflection, ...), including typical surface coatings used in modern
-  X-ray optics.
-- https://github.com/Vindaar/TrAXer - Interactive X-ray raytracer for
-  the simulation of X-ray optics.
-- https://github.com/SciNim/mclimit - Nim port of ROOT's ~TLimit~
-  class / Tom Junk's ~mclimit~ C code for confidence level
-  calculations for searches with small statistics.
+- [[https://github.com/Vindaar/phd][phd]] - The git repository of my PhD thesis. See
+  https://phd.vindaar.de for the companion website to my thesis, which
+  links to the publication and an (extended) HTML version.
+- [[https://github.com/Vindaar/TimepixAnalysis][TimepixAnalysis]] - The main data analysis framework for my PhD
+  thesis.
+- [[https://github.com/SciNim/xrayAttenuation][xrayAttenuation]] - A library for the calculation of X-ray
+  interactions with matter (transmission, reflection, ...), including
+  typical surface coatings used in modern X-ray optics.
+- [[https://github.com/Vindaar/TrAXer][TrAXer]] - Interactive X-ray raytracer for the simulation of X-ray
+  optics.
+- [[https://github.com/SciNim/mclimit][mclimit]] - Nim port of ROOT's ~TLimit~ class / Tom Junk's ~mclimit~ C
+  code for confidence level calculations for searches with small
+  statistics.
 
 *** Libraries interfacing with common tools
 
-- https://github.com/SciNim/NimBoltz - A [[https://magboltz.web.cern.ch/magboltz/][Magboltz]] interfacer from Nim,
-  which generates Magboltz input files for the user and can act as a
-  Magboltz runner (running multiple processes in parallel). Magboltz
-  is /the/ program to simulate transport of electrons in gaseous under
-  the influence of electromagnetic fields (i.e. to calculate gas
-  properties as used in gaseous detectors).  
-- https://github.com/SciNim/GarfieldNim - An (incomplete) Nim wrapper
-  for [[https://garfieldpp.web.cern.ch/garfieldpp/][Garfield++]] (tool / library for the simulation of particle
-  detectors commonly used for micropattern gaseous detectors).
-- https://github.com/SciNim/mcpl - A Nim wrapper for the [[https://mctools.github.io/mcpl/][mcpl]] (Monte
-  Carlo Particle List) file format.
-- https://github.com/SciNim/horizonsAPI - A library to interface with
-  JPL's [[https://ssd.jpl.nasa.gov/horizons/manual.html][Horizons API]] (for solar system orbital data).
+- [[https://github.com/SciNim/NimBoltz][NimBoltz]] - A [[https://magboltz.web.cern.ch/magboltz/][Magboltz]] interfacer from Nim, which generates Magboltz
+  input files for the user and can act as a Magboltz runner (running
+  multiple processes in parallel). Magboltz is /the/ program to
+  simulate transport of electrons in gaseous under the influence of
+  electromagnetic fields (i.e. to calculate gas properties as used in
+  gaseous detectors).
+- [[https://github.com/SciNim/GarfieldNim][GarfieldNim]] - An (incomplete) Nim wrapper for [[https://garfieldpp.web.cern.ch/garfieldpp/][Garfield++]] (tool /
+  library for the simulation of particle detectors commonly used for
+  micropattern gaseous detectors).
+- [[https://github.com/SciNim/mcpl][mcpl]] - A Nim wrapper for the [[https://mctools.github.io/mcpl/][mcpl]] (Monte Carlo Particle List) file
+  format.
+- [[https://github.com/SciNim/horizonsAPI][horizonsAPI]] - A library to interface with JPL's [[https://ssd.jpl.nasa.gov/horizons/manual.html][Horizons API]] (for
+  solar system orbital data).
 
 ** Scientific computing libraries 🔬🧮🔥
 
-- https://github.com/Vindaar/ggplotnim - A Nim plotting library
-  heavily inspired by [[https://ggplot2.tidyverse.org/][ggplot2]].
-- https://github.com/Vindaar/ginger - The backend library for
-  ~ggplotnim~, which handles the actual rendering of ~ggplotnim~ plots
-  to PDF, SVG, PNG targets (mainly via Cairo or TikZ).
-- https://github.com/SciNim/Unchained - A library for compile-time
-  physical unit checking and conversions.
-- https://github.com/SciNim/Measuremancer - A library for automatic
-  error propagation of measurements with uncertainties.
-- https://github.com/Vindaar/nimhdf5 - Nim bindings to the HDF5
-  library (similar to [[https://h5py.org][h5py]]).
-- https://github.com/SciNim/rnim - A library to interface with the R
-  programming language from Nim (similar to [[https://github.com/yglukhov/nimpy][nimpy]] or [[https://github.com/SciNim/nimjl][nimjl]]).
-- https://github.com/mratsim/Arraymancer/ - Co-maintainer of
-  Arraymancer, Nim's most important tensor library (think numpy).
-- https://github.com/SciNim/flambeau - Co-maintainer of Flambeau, our
-  Nim wrapper of ~libtorch~, the C++ backend of PyTorch.
-- https://github.com/Vindaar/nimnlopt - Nim wrapper of [[https://nlopt.readthedocs.io/][NLopt]], a non
-  linear optimization library.
-- https://github.com/Vindaar/nim-mpfit - Nim wrapper of [[https://www.physics.wisc.edu/~craigm/idl/cmpfit.html][cMPFIT]], a
-  Levenberg-Marquardt least squares fitting library.
-- https://github.com/SciNim/impulse - Co-maintainer of ~impulse~, a
-  signal processing library for Nim.
-- https://github.com/SciNim/scinim - Co-maintainer of ~scinim~, a
-  general library for different aspects related to scientific
-  computing in Nim. What might become an equivalent to [[https://scipy.org][scipy]] for Nim
-  in the future.    
+- [[https://github.com/Vindaar/ggplotnim][ggplotnim]] - A Nim plotting library heavily inspired by [[https://ggplot2.tidyverse.org/][ggplot2]].
+- [[https://github.com/Vindaar/ginger][ginger]] - The backend library for ~ggplotnim~, which handles the
+  actual rendering of ~ggplotnim~ plots to PDF, SVG, PNG targets
+  (mainly via Cairo or TikZ).
+- [[https://github.com/SciNim/Unchained][Unchained]] - A library for compile-time physical unit checking and
+  conversions.
+- [[https://github.com/SciNim/Measuremancer][Measuremancer]] - A library for automatic error propagation of
+  measurements with uncertainties.
+- [[https://github.com/Vindaar/nimhdf5][nimhdf5]] - Nim bindings to the HDF5 library (similar to [[https://h5py.org][h5py]]).
+- [[https://github.com/SciNim/rnim][rnim]] - A library to interface with the R programming language from
+  Nim (similar to [[https://github.com/yglukhov/nimpy][nimpy]] or [[https://github.com/SciNim/nimjl][nimjl]]).
+- [[https://github.com/mratsim/Arraymancer][Arraymancer]] - Co-maintainer of Arraymancer, Nim's most important
+  tensor library (think numpy).
+- [[https://github.com/SciNim/flambeau][Flambeau]] - Co-maintainer of Flambeau, our Nim wrapper of ~libtorch~,
+  the C++ backend of PyTorch.
+- [[https://github.com/Vindaar/nimnlopt][nimlopt]] - Nim wrapper of [[https://nlopt.readthedocs.io/][NLopt]], a non linear optimization library.
+- [[https://github.com/Vindaar/nim-mpfit][nim-mpfit]] - Nim wrapper of [[https://www.physics.wisc.edu/~craigm/idl/cmpfit.html][cMPFIT]], a Levenberg-Marquardt least
+  squares fitting library.
+- [[https://github.com/SciNim/impulse][impulse]] - Co-maintainer of ~impulse~, a signal processing library
+  for Nim.
+- [[https://github.com/SciNim/scinim][scinim]] - Co-maintainer of ~scinim~, a general library for different
+  aspects related to scientific computing in Nim. What might become an
+  equivalent to [[https://scipy.org][scipy]] for Nim in the future.
   
 ** General purpose libraries 🖥️📄
 
-- https://github.com/Vindaar/shell - A mini DSL to execute processes from
-  Nim, in the form of a shell-like DSL. Supports constructs like
-  ~expect~.
-- https://github.com/Vindaar/LatexDSL - A DSL to generate LaTeX from
-  Nim, which includes some compile-time checking, easy TeX c
-- https://github.com/Vindaar/cacheMe - A helper library to cache
-  function calls over multiple program runs (intended for expensive,
-  deterministic operations).
-- https://github.com/Vindaar/flatBuffers - A library to save / load
-  nested Nim object as flat binary files.
-- https://github.com/Vindaar/forked - Provides a simplified
-  abstraction ~forked~ over [[https://github.com/c-blake/cligen][cligen's]] [[https://github.com/c-blake/cligen/blob/master/cligen/procpool.nim][procpool]]
-  (multiprocessing). Multiprocess your for loops!
-- https://github.com/Vindaar/JsonSchemaValidator - A JSON schema
-  validation library.
-- https://github.com/Vindaar/orgtables - A (very early) library to
-  produce Org mode tables from Nim data structures.
+- [[https://github.com/Vindaar/shell][shell]] - A mini DSL to execute processes from Nim, in the form of a
+  shell-like DSL. Supports constructs like ~expect~.
+- [[https://github.com/Vindaar/LatexDSL][LatexDSL]] - A DSL to generate LaTeX from Nim, which includes some
+  compile-time checking, easy TeX c
+- [[https://github.com/Vindaar/cacheMe][cacheMe]] - A helper library to cache function calls over multiple
+  program runs (intended for expensive, deterministic operations).
+- [[https://github.com/Vindaar/flatBuffers][flatBuffers]] - A library to save / load nested Nim object as flat
+  binary files.
+- [[https://github.com/Vindaar/forked][forked]] - Provides a simplified abstraction ~forked~ over [[https://github.com/c-blake/cligen][cligen's]]
+  [[https://github.com/c-blake/cligen/blob/master/cligen/procpool.nim][procpool]] (multiprocessing). Multiprocess your for loops!
+- [[https://github.com/Vindaar/JsonSchemaValidator][JsonSchemaValidator]] - A JSON schema validation library.
+- [[https://github.com/Vindaar/orgtables][orgtable]] - A (very early) library to produce Org mode tables from
+  Nim data structures.
 
 ** Experimental ideas and hacks 🧪⚗️🌋
 
-- https://github.com/Vindaar/NimJit - Attempts to write a JIT compiler
-  for Nim based on ~libgccjit~. Initial attempts based on semchecked
-  Nim AST, current version based on NIR (Nim's current _highly
-  experimental_ IR).
-- https://github.com/Vindaar/hotpatching - Fun hack to hotpatch a Nim
-  function at runtime.
+- [[https://github.com/Vindaar/NimJit][NimJit]] - Attempts to write a JIT compiler for Nim based on
+  ~libgccjit~. Initial attempts based on semchecked Nim AST, current
+  version based on NIR (Nim's current _highly experimental_ IR).
+- [[https://github.com/Vindaar/hotpatching][hotpatching]] - Fun hack to hotpatch a Nim function at runtime.
 
 ** Machine learning projects 📜🧠🤯📎
 
-- https://github.com/Vindaar/llama2nim - A Nim port of Andrej Karpathy's [[https://github.com/karpathy/llama2.c][llama2.c]].
-- https://github.com/Vindaar/llm.nim - A Nim port of the CPU version
-  of Andrej Karpathy's [[https://github.com/karpathy/llm.c][llm.c]].  
+- [[https://github.com/Vindaar/llama2nim][llama2nim]] - A Nim port of Andrej Karpathy's [[https://github.com/karpathy/llama2.c][llama2.c]].
+- [[https://github.com/Vindaar/llm.nim][llm.nim]] - A Nim port of the CPU version of Andrej Karpathy's [[https://github.com/karpathy/llm.c][llm.c]].
 - [[https://github.com/Vindaar/TimepixAnalysis/blob/master/Analysis/ingrid/nn/train_ingrid.nim][train_ingrid.nim]] - The training code for the MLP used for data
   classification as part of my PhD thesis (based on Flambeau / libtorch).
-- https://github.com/Vindaar/QuasarContANN - Work from 2014 on using
-  MLPs and CNNs for Quasar spectra predictions (prediction of the
-  spectra in the Ly-α forest) using Theano.
-- https://github.com/SciNim/runtimeGrad - A library for 3 different
-  automatic differentiation implementations (Wengert list, dual
-  numbers & complex step derivative).
-- https://github.com/SciNim/abyss - A very experimental attempt at a
-  [[https://fluxml.ai/Zygote.jl/][Zygote.jl]] like source-to-source, reverse mode automatic
-  differentiation library for Nim.
-- https://github.com/SciNim/astGrad - A compile-time symbolic
-  differentiation library to differentiate (math based) Nim code based
-  on its AST.
-- https://github.com/Vindaar/NeuralNetworkLiveDemo - Demo (part of a
-  talk) of training a simple MLP on MNIST with a browser based live
-  interface into the training progress.
+- [[https://github.com/Vindaar/QuasarContANN][QuasarContANN]] - Work from 2014 on using MLPs and CNNs for Quasar
+  spectra predictions (prediction of the spectra in the Ly-α forest)
+  using Theano.
+- [[https://github.com/SciNim/runtimeGrad][runtimeGrad]] - A library for 3 different automatic differentiation
+  implementations (Wengert list, dual numbers & complex step
+  derivative).
+- [[https://github.com/SciNim/abyss][abyss]] - A very experimental attempt at a [[https://fluxml.ai/Zygote.jl/][Zygote.jl]] like
+  source-to-source, reverse mode automatic differentiation library for
+  Nim.
+- [[https://github.com/SciNim/astGrad][astGrad]] - A compile-time symbolic differentiation library to
+  differentiate (math based) Nim code based on its AST.
+- [[https://github.com/Vindaar/NeuralNetworkLiveDemo][NeuralNetworkLiveDemo]] - Demo (part of a talk) of training a simple
+  MLP on MNIST with a browser based live interface into the training
+  progress.
 
 ** Other languages
 
-- https://github.com/Vindaar/expressionEval - A C++, header only, math
-  expression evaluator library, intended to be used as part of a [[https://root.cern.ch][ROOT]]
-  based C++ framework (but never was).
+- [[https://github.com/Vindaar/expressionEval][expressionEval]] - A C++, header only, math expression evaluator
+  library, intended to be used as part of a [[https://root.cern.ch][ROOT]] based C++ framework
+  (but never was).
